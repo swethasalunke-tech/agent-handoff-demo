@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "description": "Hand-authored fixture dataset for agent-handoff-demo. These findings are used to exercise FakeResearcherAgent deterministically in tests and in the demo pipeline. They are NOT the output of a live research process or any LLM call - they are ordinary, verifiable facts about common software topics, written by hand and cited to well-known reference documentation so the demo has something real (if simple) to work with.",
+    "topics": ["http-status-codes", "python-virtual-environments", "git-basics"]
+  },
+  "http-status-codes": [
+    {
+      "claim": "HTTP status code 200 OK indicates that a request has succeeded.",
+      "source": "MDN Web Docs: HTTP response status codes",
+      "confidence": 0.98
+    },
+    {
+      "claim": "HTTP status code 404 Not Found indicates the server cannot find the requested resource.",
+      "source": "MDN Web Docs: HTTP response status codes",
+      "confidence": 0.98
+    },
+    {
+      "claim": "HTTP status code 301 Moved Permanently indicates a requested resource has been permanently moved to a new URL.",
+      "source": "MDN Web Docs: HTTP response status codes",
+      "confidence": 0.95
+    },
+    {
+      "claim": "HTTP status code 500 Internal Server Error indicates the server encountered an unexpected condition that prevented it from fulfilling the request.",
+      "source": "MDN Web Docs: HTTP response status codes",
+      "confidence": 0.93
+    }
+  ],
+  "python-virtual-environments": [
+    {
+      "claim": "The venv module, part of the Python standard library since Python 3.3, is used to create lightweight virtual environments.",
+      "source": "Python documentation: venv - Creation of virtual environments",
+      "confidence": 0.97
+    },
+    {
+      "claim": "Each virtual environment created with venv has its own Python binary and an independent set of installed packages.",
+      "source": "Python documentation: venv - Creation of virtual environments",
+      "confidence": 0.95
+    },
+    {
+      "claim": "Activating a virtual environment on Unix-like shells is done by sourcing the activate script located in the environment's bin directory.",
+      "source": "Python documentation: venv - Creation of virtual environments",
+      "confidence": 0.9
+    },
+    {
+      "claim": "Running pip install inside an activated virtual environment installs packages into that environment only, not system-wide.",
+      "source": "Python Packaging User Guide: Installing packages using pip and virtual environments",
+      "confidence": 0.92
+    }
+  ],
+  "git-basics": [
+    {
+      "claim": "git init creates a new, empty Git repository in the current directory.",
+      "source": "Git documentation: git-init",
+      "confidence": 0.97
+    },
+    {
+      "claim": "git commit records a snapshot of the currently staged changes to the repository's history.",
+      "source": "Git documentation: git-commit",
+      "confidence": 0.96
+    },
+    {
+      "claim": "git branch, run with no arguments, lists the branches that currently exist in the repository.",
+      "source": "Git documentation: git-branch",
+      "confidence": 0.95
+    },
+    {
+      "claim": "A detached HEAD state occurs when HEAD points directly to a commit instead of pointing to a branch reference.",
+      "source": "Git documentation: git-checkout",
+      "confidence": 0.88
+    }
+  ]
+}
